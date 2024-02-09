@@ -1,0 +1,47 @@
+.navbar {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: lightgrey;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.item a {
+  color: teal;
+  text-decoration: none;
+  position: relative;
+}
+
+.item a:before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: teal;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.item a:hover:before {
+  width: 100%;
+  left: 0;
+}
